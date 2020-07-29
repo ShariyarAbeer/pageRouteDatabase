@@ -24,12 +24,12 @@ class Nav extends Component {
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/">
                   Car From <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/carlist">
                   Car All
                 </a>
               </li>
