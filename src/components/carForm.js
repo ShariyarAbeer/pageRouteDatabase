@@ -18,7 +18,7 @@ class CarForm extends Component {
 
 	onClickHandler = () => {
 		axios
-			.post("", this.state.postData)
+			.post("https://laagbe.com/test/input.php", this.state.postData)
 			.then((response) => {
 				this.setState({ postResult: response.data });
 				alert(this.state.postResult);
