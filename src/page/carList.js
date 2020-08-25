@@ -12,7 +12,7 @@ class Carlist extends Component {
 
 	componentDidMount() {
 		axios
-			.get("https://restcountries.eu/rest/v2/all")
+			.get("https://laagbe.com/car-info/api/post/read.php")
 			.then((response) => {
 				this.setState({ mydata: response.data });
 			})
@@ -24,7 +24,7 @@ class Carlist extends Component {
 	render() {
 		const mycar = this.state.mydata;
 		const carModel = mycar.map((mycar) => {
-			return <li>{mycar.name}</li>;
+			return <li>{mycar.title}</li>;
 		});
 
 		return (
